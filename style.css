@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 0.875rem;
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+}
+
+img, picture {
+    display: block;
+    max-width: 100%;
+}
+
+.content {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    overflow: hidden;
+    display: grid;
+    max-width: 600px;
+}
+
+.description {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.category {
+    letter-spacing: 5px;
+}
+
+.title {
+    font-family: "Fraunces";
+    font-size: 2rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sale {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    font-size: 2rem;
+}
+
+.original {
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75em 1.5em;
+    font-weight: 900;
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    }
+
+.button:hover {
+    background-color: hsl(228, 12%, 48%);
+    transition: 0.3s;
+}
+
+.button:active {
+    background-color: hsl(278, 85%, 57%);
+    box-shadow: 1rem;
+}
+
+@media (min-width: 600px) {
+    .content {
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+    }
+
+
+}
